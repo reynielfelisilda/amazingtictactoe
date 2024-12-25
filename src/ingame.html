@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <audio id="background-music" src="bg.mp3" loop></audio>
+    <button id="back-to-menu">BACK</button>
+    <div class="turn-container">
+      <h3>Turn for</h3>
+      <div class="turn-box align">X</div>
+      <div class="turn-box align">O</div>
+      <div class="bg"></div>
+    </div>
+    <div class="main-grid">
+      <div class="box align">0</div>
+      <div class="box align">1</div>
+      <div class="box align">2</div>
+      <div class="box align">3</div>
+      <div class="box align">4</div>
+      <div class="box align">5</div>
+      <div class="box align">6</div>
+      <div class="box align">7</div>
+      <div class="box align">8</div>
+    </div>
+    <div class="scoreboard">
+      <h3>Scoreboard</h3>
+      <p>X Wins: <span id="x-wins">0</span></p>
+      <p>O Wins: <span id="o-wins">0</span></p>
+    </div>
+    <h2 id="results"></h2>
+    <button id="play-again">PLAY AGAIN</button>
+    <button id="mute-toggle">Mute Music</button>
+    <script>
+      
+      document.getElementById("back-to-menu").addEventListener("click", () => {
+        window.location.href = "index.html"; // Navigate back to the main menu
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
