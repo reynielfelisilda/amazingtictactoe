@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <audio id="background-music" src="bg.mp3" loop></audio>
+  <button id="mute-toggle">Mute Music</button>
+  <header>
+    <h1>ABOUT THIS GAME</h1>
+  </header>
+  <section class="content">
+    <p>Tic Tac Toe is a classic two-player game that has entertained generations</p> 
+      <p>for decades. It's easy to learn and offers a fun challenge each time you play.</p> 
+      <p>Whether you're a beginner or a seasoned player, Tic Tac Toe never gets old!</p>
+    <h1>CREDITS</h1>
+    <h3>DEVELOPERS</h3>
+      <h2>Edgar Lino L. Hinlo</h2>
+      <h2>Rey Neil P. Felisilda</h2>
+      <h2>Marc Vincent T. Alcarez </h2>
+    <button id="back-to-menu">Back</button>
+  </section>
+
+  <script>
+      let backgroundMusic = document.getElementById("background-music");
+    backgroundMusic.volume = 0.5; // Adjust volume
+    backgroundMusic.play();
+    document.getElementById("back-to-menu").addEventListener("click", () => {
+      window.location.href = "index.html"; // Navigate back to the main menu
+    });
+  </script>
+</body>
+</html>

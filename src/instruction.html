@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Play Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <audio id="background-music" src="bg.mp3" loop></audio>
+  <button id="mute-toggle">Mute Music</button>
+  <div class="content">
+    <h1>HOW TO PLAY</h1>
+    <p>Tic Tac Toe is a simple and fun game for two players.</p>
+    <p>The goal is to get three of your marks (either "X" or "O") in a row, either</p>
+    <p>horizontally, vertically, or diagonally, before your opponent does.</p>
+
+    <h1>INSTRUCTION</h1>
+    <p>Player 1 starts by placing an "X" in one of the empty boxes.</p>
+    <p>Player 2 then places an "O" in one of the remaining empty boxes.</p>
+    <p>Players take turns marking a square until one of the following happens:</p>
+    <p>A player wins by placing three of their marks in a row,</p>
+    <p>either horizontally, vertically, or diagonally.</p>
+    <p>The game ends in a draw if all boxes are filled and no player has won.</p>
+    <p>After a game is over, click the Play Again button to start a new game.</p>
+    <button id="back-to-menu">Back</button>
+  </div>
+
+  <script>
+      // Play background music when the page loads
+      let backgroundMusic = document.getElementById("background-music");
+    backgroundMusic.volume = 0.5; // Adjust volume
+    backgroundMusic.play();
+
+    document.getElementById("back-to-menu").addEventListener("click", () => {
+      window.location.href = "index.html"; // Navigate back to the main menu
+    });
+  </script>
+</body>
+</html>
