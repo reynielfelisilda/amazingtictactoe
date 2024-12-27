@@ -1,5 +1,5 @@
 {
-  "name": "ITE-18 Activity 1.6",
+  "name": "tic-tac-toe",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -14,10 +14,9 @@
     "vite": "^4.0.4"
   },
   "dependencies": {
-    "lil-gui":"^0.17.0",
+    "lil-gui": "^0.17.0",
     "gsap": "^3.11.4",
     "three": "^0.148.0",
     "vercel": "^39.0.2"
-
   }
 }
