@@ -31,15 +31,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Button functionality for navigation
   document.getElementById("start-btn").addEventListener("click", () => {
-    window.location.href = "ingame.html"; // Redirect to the game page
+    window.location.href = "/ingame.html"; // Redirect to the game page
   });
 
   document.getElementById("how-to-play-btn").addEventListener("click", () => {
-    window.location.href = "instruction.html"; // Redirect to the instruction page
+    window.location.href = "/instruction.html"; // Redirect to the instruction page
   });
 
   document.getElementById("about-btn").addEventListener("click", () => {
-    window.location.href = "about.html"; // Redirect to the about page
+    window.location.href = "/about.html"; // Redirect to the about page
   });
 
   document.getElementById("exit-btn").addEventListener("click", () => {
